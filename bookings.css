@@ -1,0 +1,47 @@
+#container {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.logo_title {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    align-items: center;
+    font: 2em "Open Sans", sans-serif;
+    color: rgb(130, 174, 63);
+}
+
+.btn-menu {
+    border: 0px;
+    background-color: white;
+}
+
+#menu-container {
+    padding-right: 2%;
+}
+
+
+#container {
+    height: 600px;
+    width: 100%;
+    background-color: rgb(190, 190, 190);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.booking_list {
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-left: 30%;
+    padding-right: 30%;
+    align-items: center;
+    font: 0.75em "Open Sans", sans-serif;
+    font-weight: bolder;
+}

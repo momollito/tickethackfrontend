@@ -1,0 +1,165 @@
+#container {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.btn-menu {
+    border: 0px;
+    background-color: white;
+}
+
+
+.logo_title {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    align-items: center;
+    font: 2em "Open Sans", sans-serif;
+    color: rgb(130, 174, 63);
+}
+
+#menu-container {
+    padding-right: 2%;
+}
+
+.Title_case{
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Title {
+    /* background-color: yellow; */
+    margin: 10px 0px 10px 0px;
+    font: 2em "Open Sans", sans-serif;
+    font-weight: 900;
+    color: aliceblue;
+}
+
+#subscribe {
+    /* background-color: aqua; */
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    font: 0.75em "Open Sans", sans-serif;
+    font-weight: 900;
+    color: aliceblue;
+}
+
+.containers_cards {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5%;
+    padding-bottom: 20%;
+    flex-direction: row;
+    /* background-color: yellow; */
+    align-items: center;
+}
+
+.card_model {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-content: center;
+    background-color: #FEFEFE;
+    border-radius: 20px;
+    height: 200px;
+    padding: 1em;
+}
+
+#cards_1 {
+    background-color: #FEFEFE;
+    height: 50%;
+    width: 30%;
+}
+
+#btn-search {
+    padding: 3%;
+    size: 10%;
+    font: 0.75em "Open Sans", sans-serif;
+    font-size: bolder;
+    color: whitesmoke;
+    background-color: #66A692;
+    border: 0px;
+    border-radius: 5px;
+}
+
+#cards_2 {
+    background-color: #FEFEFE;
+    height: 50%;
+    width: 30%;
+}
+
+#subscribe_text {
+    text-align: center;
+    font: 0.7em "Open Sans", sans-serif;
+    font-weight: bolder;
+}
+
+
+img {
+    width : 80px;
+    height : 80px;
+    }
+
+
+.space_departure {
+    display: flex;
+    flex-direction: column;
+}
+
+.placeholder {
+    background-color: #F2F4F3;
+    padding: 5%;
+    border-radius: 3px;
+}
+
+
+
+#departure {
+    border : #FF00FF solid 0px ;
+    border-bottom: #FF00FF solid 1px ;
+}
+
+
+#arrival {
+    border : #FF00FF solid 0px ;
+}
+
+.columns {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    height: 30%;
+    align-content: center;
+    border-radius: 20px;
+    height: 200px;
+    background-color: #FEFEFE;
+}
+
+
+.columns_train {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    background-color: #FEFEFE;
+    align-items: center;
+    border-radius: 20px;
+    height: 200px;
+}
+
+.head_container {
+    background-image: url("./images/background.jpg");
+    background-size: cover;
+}
+
+
+#separator {
+    border-bottom:1px solid rgb(54, 176, 60);
+    width: 80%;
+}
