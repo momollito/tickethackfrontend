@@ -1,0 +1,88 @@
+#container {
+    display: flex;
+    flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 252, 252);
+}
+
+.btn-menu {
+    border: 0px;
+    background-color: white;
+}
+
+.bracket {
+    background-color: rgb(244, 244, 244);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.journey {
+    background-color: rgb(221, 221, 221);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 30px;
+}
+
+p {
+    align-self: center;
+}
+
+#btn-search {
+    padding: 3%;
+    size: 10%;
+    font: 0.75em "Open Sans", sans-serif;
+    font-size: bolder;
+    color: whitesmoke;
+    background-color: #66A692;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.footer_journey {
+    background-color: rgb(51, 51, 154);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+}
+
+.logo_title {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    align-items: center;
+    font: 2em "Open Sans", sans-serif;
+    color: rgb(130, 174, 63);
+}
+
+#menu-container {
+    padding-right: 2%;
+}
+
+.container_card {
+    height: 600px;
+    width: 100%;
+    background-color: rgb(190, 190, 190);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.booking_list {
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-left: 30%;
+    padding-right: 30%;
+    align-items: center;
+    font: 0.75em "Open Sans", sans-serif;
+    font-weight: bolder;
+}
