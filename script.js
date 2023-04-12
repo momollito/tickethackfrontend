@@ -1,7 +1,3 @@
-
-
-
-
 document.querySelector("#btn-search").addEventListener("click", function () {
   console.log("Click Search detected!");
 
@@ -17,7 +13,34 @@ document.querySelector("#btn-search").addEventListener("click", function () {
       body: JSON.stringify({ departure, arrival, date }),
     });
     const resjson = await rowres.json();
-    console.log("fetch res:", resjson);
+    console.log("response", resjson);
+
+    if (resjson["trips"] === "Missing data") {
+      document.querySelector("#cards_1").innerHTML = `
+          <div class="columns">
+          <img class="img_card" src="./images/notfound.png" />
+          <div id="separator"></div>
+          <p id="subscribe_text">Missing data, please fill the form correctly.</p>
+          </div>`;
+    } else if (resjson["trips"] === "No trips were found"){
+      document.querySelector("#cards_1").innerHTML = `
+          <div class="columns">
+          <img class="img_card" src="./images/notfound.png" />
+          <div id="separator"></div>
+          <p id="subscribe_text">No trips were found, you can walk to your destination.</p>
+          </div>`;
+    } else {
+      for (trip of resjson['trips']){
+        document.querySelector("#cards_1").innerHTML = `
+          <div class="columns">
+          <p id="subscribe_text">No trips were found, you can walk to your destination.</p>
+          </div>`
+      }
+
+
+
+
+    }
   };
 
   fetchTrips();
