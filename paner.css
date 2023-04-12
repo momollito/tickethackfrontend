@@ -19,7 +19,7 @@ h3 {
 }
 
 p {
-    font: 0.7em "Open Sans", sans-serif;
+    font: 0.8em "Open Sans", sans-serif;
 }
 
 .btn-menu {
@@ -71,10 +71,8 @@ p {
 .row {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     border-radius: 5px;
-    margin-right: 5%;
-    margin-left: 5%;
 }
 
 .text_container {
@@ -83,8 +81,8 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
-    margin: 30px;
+    padding: 10px;
+    margin: 5px;
     border-radius: 6px;
 }
 

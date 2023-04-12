@@ -65,8 +65,8 @@ position: relative;
 .containers_cards {
     display: flex;
     justify-content: space-around;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-inline: 10%;
+    
     padding-top: 5%;
     padding-bottom: 20%;
     flex-direction: row;
@@ -76,20 +76,18 @@ position: relative;
 
 .card_model {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction:column ;
     justify-content: space-around;
-    height: 30%;
+    
     align-content: center;
     border-radius: 20px;
-    height: 200px;
+    height: 300px;
+    width: 300px;
+    padding-inline: 20px;
     background-color: #FEFEFE;  
 }
 
-#cards_1 {
-    background-color: #FEFEFE;
-    height: 50%;
-    width: 30%;
-}
+
 
 #btn-search {
     padding: 3%;
@@ -102,11 +100,7 @@ position: relative;
     border-radius: 5px;
 }
 
-#cards_2 {
-    background-color: #FEFEFE;
-    height: 50%;
-    width: 30%;
-}
+
 
 #subscribe_text {
     align-self:center;
@@ -131,14 +125,16 @@ img {
 .placeholder {
     background-color: #F2F4F3;
     padding: 5%;
+    margin-block: 5px;
     border-radius: 3px;
+    font: 0.8em "Open Sans", sans-serif;
 }
 
 
 
 #departure {
     border : #FF00FF solid 0px ;
-    border-bottom: #FF00FF solid 1px ;
+    border-bottom: #FF00FF solid 0px ;
 }
 
 
@@ -150,12 +146,24 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    
+    align-content: center;
+    border-radius: 20px;
+    height: 300px;
+    
+    background-color: #FEFEFE;
+    overflow: auto;
+}
+#train {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     height: 30%;
     align-content: center;
     border-radius: 20px;
     height: 200px;
-    background-color: #FEFEFE;
-}
+    
+    }
 
 
 .head_container {
@@ -168,4 +176,8 @@ img {
     align-self:center;
     border-bottom:1px solid rgb(54, 176, 60);
     width: 80%;
+}
+
+#calendar {
+    font: 0.8em "Open Sans", sans-serif;
 }
