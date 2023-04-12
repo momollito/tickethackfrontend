@@ -1,9 +1,19 @@
+#header {
+    overflow: hidden;
+background-color: #ffffff;
+position: relative;
+}  
+
+
 #container {
     display: flex;
-    flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(255, 252, 252);
+  background-color: white;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
 }
 
 .btn-menu {
@@ -13,7 +23,30 @@
     color: black;
     margin: 0px 10px 0px 0px;
     font-family: "Open Sans", sans-serif;
+}
+
+
+.logo_title {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    align-items: center;
+    font: 2em "Open Sans", sans-serif;
+    color: rgb(130, 174, 63);
     text-decoration: none;
+}
+
+#menu-container {
+    padding-right: 2%;
+    text-decoration: none;
+}
+
+.container_purchase {
+    height: 600px;
+    background-color: rgb(224, 234, 243);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .bracket {
@@ -22,6 +55,8 @@
     flex-direction: column;
     justify-content: space-between;
     border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
 .journey {
@@ -31,6 +66,7 @@
     justify-content: space-between;
     padding: 20px;
     margin: 30px;
+    border-radius: 6px;
 }
 
 p {
@@ -49,12 +85,13 @@ p {
 }
 
 .footer_journey {
-    background-color: rgb(51, 51, 154);
+    background-color: rgb(105, 105, 178);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border-radius: 5px;
     padding: 10px 20px 10px 20px;
+    color: #ffffff;
 }
 
 .logo_title {
