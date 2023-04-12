@@ -126,6 +126,7 @@ p {
 
 .logo_title {
     display: flex;
+    width: 200px;
     justify-content: space-between;
     padding-left: 10%;
     align-items: center;
