@@ -9,6 +9,11 @@
 .btn-menu {
     border: 0px;
     background-color: white;
+    text-decoration: none;
+    color: black;
+    margin: 0px 10px 0px 0px;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
 }
 
 .bracket {

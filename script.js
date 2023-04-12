@@ -10,3 +10,4 @@ document.querySelector('#departure').addEventListener('click',
 
 
 console.log('End');
+

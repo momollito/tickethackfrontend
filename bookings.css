@@ -8,6 +8,10 @@
 .btn-menu {
     border: 0px;
     background-color: white;
+    text-decoration: none;
+    color: black;
+    margin: 0px 10px 0px 0px;
+    font-family: "Open Sans", sans-serif;
 }
 
 
@@ -18,6 +22,7 @@
     align-items: center;
     font: 2em "Open Sans", sans-serif;
     color: rgb(130, 174, 63);
+    text-decoration: none;
 }
 
 #menu-container {
