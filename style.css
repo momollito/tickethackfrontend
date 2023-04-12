@@ -65,11 +65,11 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
+    height: 30%;
     align-content: center;
-    background-color: #FEFEFE;
     border-radius: 20px;
     height: 200px;
-    padding: 1em;
+    background-color: #FEFEFE;  
 }
 
 #cards_1 {
@@ -96,6 +96,7 @@
 }
 
 #subscribe_text {
+    align-self:center;
     text-align: center;
     font: 0.7em "Open Sans", sans-serif;
     font-weight: bolder;
@@ -103,6 +104,7 @@
 
 
 img {
+    align-self:center;
     width : 80px;
     height : 80px;
     }
@@ -133,7 +135,7 @@ img {
 
 .columns {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     justify-content: space-around;
     height: 30%;
     align-content: center;
@@ -143,16 +145,6 @@ img {
 }
 
 
-.columns_train {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    background-color: #FEFEFE;
-    align-items: center;
-    border-radius: 20px;
-    height: 200px;
-}
-
 .head_container {
     background-image: url("./images/background.jpg");
     background-size: cover;
@@ -160,6 +152,7 @@ img {
 
 
 #separator {
+    align-self:center;
     border-bottom:1px solid rgb(54, 176, 60);
     width: 80%;
 }
