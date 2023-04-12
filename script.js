@@ -22,3 +22,14 @@ document.querySelector("#btn-search").addEventListener("click", function () {
 
   fetchTrips();
 });
+
+
+
+// Journey not found - HMTL
+
+{/* <div class="card_model" id="cards_1">
+<div class="columns_train">
+    <img class="img_card" src="./images/notfound.png" />
+    <div id="separator"></div>
+    <p id="subscribe_text">No trip</p>
+</div> */}

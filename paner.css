@@ -4,6 +4,12 @@ background-color: #ffffff;
 position: relative;
 }  
 
+h3 {
+    text-align: center;
+    font: 1em "Open Sans", sans-serif;
+    font-weight: bolder;
+}
+
 
 #container {
     display: flex;
@@ -13,7 +19,7 @@ position: relative;
 }
 
 p {
-    font-family: "Open Sans", sans-serif;
+    font: 0.7em "Open Sans", sans-serif;
 }
 
 .btn-menu {
@@ -41,28 +47,41 @@ p {
     text-decoration: none;
 }
 
+
 .container_purchase {
     height: 600px;
-    background-color: rgb(224, 234, 243);
+    background-color: #F2F4F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.background-purchase {
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #e5ebea;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.bracket {
-    background-color: rgb(244, 244, 244);
+.row {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 5px;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
-.journey {
-    background-color: rgb(221, 221, 221);
+.text_container {
+    background-color: #F6F1F0;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     padding: 20px;
     margin: 30px;
@@ -85,13 +104,24 @@ p {
 }
 
 .footer_journey {
-    background-color: rgb(105, 105, 178);
+    background-color: #051544;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     border-radius: 5px;
     padding: 10px 20px 10px 20px;
     color: #ffffff;
+    font: 1em "Open Sans", sans-serif;
+}
+
+.delete {
+    background-color: #66A692;
+    padding: 8px 10px 10px 10px;
+    text-align: center;
+    border-radius: 7px;
+    font: 0.3em "Open Sans", sans-serif;
+    color: rgb(255, 255, 255);
 }
 
 .logo_title {
@@ -110,7 +140,7 @@ p {
 .container_card {
     height: 600px;
     width: 100%;
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(255, 254, 254);
     display: flex;
     justify-content: center;
     align-items: center;
