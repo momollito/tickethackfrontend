@@ -17,7 +17,8 @@ function noTrips() {
 }
 
 //Array with trips to export to cart.html
-// let tripAdded = [];
+
+let tripAdded = [];
 
 //Search for Trains
 
@@ -45,7 +46,6 @@ document.querySelector("#btn-search").addEventListener("click", function () {
     } else if (resjson["trips"] === "No trips were found") {
       noTrips();
     } else {
-
       //ADD trips in front page for selection
       document.querySelector("#cards_1").innerHTML = `
         <div class="columns" id="result"></div>`;
@@ -55,24 +55,52 @@ document.querySelector("#btn-search").addEventListener("click", function () {
         let arrivalRes = trip.arrival;
         let hourRes = trip.date;
         let priceRes = trip.price;
-        console.log('Data from BD =>', departureRes, arrivalRes,hourRes,priceRes)
+
+        console.log(
+          "Data from DB =>",
+          departureRes,
+          arrivalRes,
+          hourRes,
+          priceRes
+        );
         document.querySelector("#result").innerHTML += `
         <div class="row">
         <div class="text_container">
             <p>${departureRes} 🔜 ${arrivalRes}</p>
             <p>${hourRes}</p>
             <p>${priceRes}€</p>
-            <span class="add">Add</span>
+            <span class="add"  >Add</span>
         </div>
       </div>
       </div>`;
 
-      }
+        let allAddButton = document.querySelectorAll(".add");
+        
+        for (let addButton of allAddButton)
+          addButton.addEventListener("click", function () {
+            console.log("Click ADD detected!");
+            
 
-      trip.addEventListener("click", function () {
-        console.log("Click ADD detected!");
-      });
+            tripAdded.push(trip)
+            console.log(tripAdded)
+          });
+      }
     }
   };
   fetchTrips();
 });
+
+// add.addEventListener("click", function () {
+//   console.log("Click ADD detected!");
+//   tripAdded.push(trip);
+//   console.log(tripAdded)
+// });
+
+//   //Use ADD BUTTON to add to cart
+//   const allAddButton = document.querySelectorAll(".add");
+//   console.log(allAddButton);
+//   for (let addButton of allAddButton)
+//     addButton.addEventListener("click", function () {
+//       console.log("Click ADD detected!");
+//       tripAdded.push()
+// });
